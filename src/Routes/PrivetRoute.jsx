@@ -4,7 +4,7 @@ import useAuth from "../hooks/useAuth";
 
 const PrivetRoute = ({ children }) => {
    const {user, loader} = useAuth()
-  const location = useLocation();
+   const location = useLocation();
 
   if (loader) {
     return (
@@ -18,3 +18,4 @@ const PrivetRoute = ({ children }) => {
 };
 
 export default PrivetRoute;
+
